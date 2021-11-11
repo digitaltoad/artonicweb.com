@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import { FourUpCallout } from '@/common/components/elements/FourUpCallout'
 import { Hero } from '@/common/components/elements/Hero'
 import { MainLayout } from '@/common/components/layouts/MainLayout'
@@ -7,7 +6,7 @@ import { ReactNode } from 'react'
 const HERO_HEADING = 'You\'re here to step up your game.'
 const HERO_SUBHEADING = <>We&apos;re here to <strong>make it happen</strong></>
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <Hero
