@@ -54,7 +54,7 @@ function Item({ Icon, url, title, list }: FourUpCalloutItemProps) {
       <div tw="h-[6.875rem]">
         <Icon  />
       </div> 
-      <a href={url} tw="font-teko text-3xl text-brand uppercase leading-none block mb-7">{title}</a>
+      <a href={url} tw="font-teko text-3xl text-brand-600 uppercase leading-none block mb-7">{title}</a>
       <ul tw="list-inside text-center">
         {Object.entries(list).map(([url, title]) => (
           <li key={title} tw="mb-2 text-lg"><a href={url}><span>{title}</span></a></li>
