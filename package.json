@@ -6,17 +6,37 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tina-dev": "yarn tinacms server:start -c \"next dev\"",
+    "tina-build": "yarn tinacms server:start -c \"next build\"",
+    "tina-start": "yarn tinacms server:start -c \"next start\""
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "@tinacms/cli": "^0.55.2",
+    "foundation-sites": "^6.7.2",
     "next": "11.1.2",
+    "next-mdx-remote": "^3.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.42.1",
+    "styled-components": "^5.3.1",
+    "tinacms": "^0.55.2"
   },
   "devDependencies": {
     "@types/react": "17.0.24",
+    "@types/styled-components": "^5.1.14",
+    "babel-plugin-twin": "^1.0.2",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "typescript": "4.4.3"
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16",
+    "twin.macro": "^2.7.0",
+    "typescript": "4.5.0-beta"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
   }
 }
