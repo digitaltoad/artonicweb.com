@@ -2,6 +2,7 @@ import { FourUpCallout } from '@/common/components/elements/FourUpCallout'
 import { Hero } from '@/common/components/elements/Hero'
 import { MainLayout } from '@/common/components/layouts/MainLayout'
 import { ReactNode } from 'react'
+import Head from 'next/head'
 
 const HERO_HEADING = 'You\'re here to step up your game.'
 const HERO_SUBHEADING = <>We&apos;re here to <strong>make it happen</strong></>
@@ -9,10 +10,16 @@ const HERO_SUBHEADING = <>We&apos;re here to <strong>make it happen</strong></>
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>Artonic | Website Design &amp; Digital Marketing in Michigan</title>
+        <meta name="description" content="Artonic is a Michigan web design and digital marketing agency. We build beautiful websites and increase leads for your business's success. Contact us today!" />
+      </Head>
+
       <Hero
         heading={HERO_HEADING}
         subheading={HERO_SUBHEADING}
       />
+
       <section tw="py-[5.625rem]">
         <FourUpCallout>
           <FourUpCallout.Heading>How can we help your business?</FourUpCallout.Heading>
